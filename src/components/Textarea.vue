@@ -1,8 +1,10 @@
 <template>
-  <div>
-    <h3>Описание проблемы</h3>
-    <textarea v-model="textareaChange" />
-  </div>
+  <section class="section">
+    <p class="section__title">
+      Описание проблемы<span class="section__important">*</span>
+    </p>
+    <textarea class="textarea" v-model="textareaChange" placeholder="Введите текст"/>
+  </section>
 </template>
 
 <script>
@@ -30,4 +32,16 @@ export default {
 </script>
 
 <style>
+  .textarea {
+    resize: none;
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    box-sizing: border-box;
+
+    font-size: 1rem;
+    font-family: inherit;
+    outline: none;
+    border-radius: 2px;
+  }
 </style>

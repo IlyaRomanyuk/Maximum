@@ -1,10 +1,12 @@
 <template>
-  <div>
-    <h3>Загрузка документов</h3>
-    <div>Приложите, пожалуйста, полноэкранный скриншот.</div>
-    <div>Это поможет быстрее решить проблему.</div>
+  <section class="section">
+    <p class="section__title">Загрузка документов</p>
+    <div class="section__text">
+      <div>Приложите, пожалуйста, полноэкранный скриншот.</div>
+      <div>Это поможет быстрее решить проблему.</div>
+    </div>
     <input type="file" name='file'>
-  </div>
+  </section>
 </template>
 
 <script>
