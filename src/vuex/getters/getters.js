@@ -4,6 +4,6 @@ export default {
     },
 
     FORM_CONTROL(state) {
-        return state.foformControl
+        return state.formControl
     }
 }
