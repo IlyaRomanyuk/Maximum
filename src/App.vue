@@ -1,24 +1,16 @@
 <template>
   <div id="app">
     <div class="container">
-      <h2 class="title">Форма подачи заявки в отдел сервиса и качества</h2>
-      <div class="content">
-        <Form />
-      </div>
-    </div>
-    <keep-alive>
       <router-view></router-view>
-    </keep-alive>
+    </div>
   </div>
 </template>
 
 <script>
-import Form from "./components/Form";
 
 export default {
   name: "App",
   components: {
-    Form
   }
 };
 </script>
