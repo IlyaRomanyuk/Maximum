@@ -1,8 +1,7 @@
 <template>
   <section class="section">
     <p class="section__title">
-      Тема обращения
-      <span class="section__important">*</span>
+      Тема обращения<span class="section__important">*</span>
     </p>
     <ul class="section__list">
       <div class="section__item" v-for="(item, i) in items" :key="item">

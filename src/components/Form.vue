@@ -9,6 +9,7 @@
 </template>
 
 <script>
+import {mapActions} from "vuex";
 import Filial from "./Filial";
 import Topic from "./Topic";
 import Textarea from "./Textarea";
@@ -41,9 +42,13 @@ export default {
             Swal.fire("Ошибка отправки заявки");
             return;
           }
+          this.UPDATE_FORM_CHECK({type: 'filial', val: false});
+          this.UPDATE_FORM_CHECK({type: 'topic', val: false});
+          this.UPDATE_FORM_CHECK({type: 'textarea', val: false});
           router.push({ path: "/success" });
         });
-    }
+    },
+    ...mapActions(["UPDATE_FORM_CHECK"])
   }
 };
 </script>
